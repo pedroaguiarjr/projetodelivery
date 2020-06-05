@@ -1,0 +1,199 @@
+@charset "utf-8"
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 50%;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/*svg {
+  font-weight: 800;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/*svg mask rect {
+  fill: rgba(255, 255, 255, .3);
+  width:auto;
+  height: auto;
+}
+
+svg > rect {
+  fill: white;
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}*/
+
+/*VIDEO*/
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: 60%;
+  height: auto;
+  margin-top: -15px;
+}
+
+.no-svg-header {
+  display: none;
+}
+
+/*FOTOS*/
+
+ul#album-fotos  {
+  width: auto;
+  margin-top: 0px;
+  padding: 40px;
+  overflow: hidden;
+  list-style: none;
+  background: url("_imagens/burger.jpeg")
+  
+}
+
+ul#album-fotos li{
+  width: 180px;
+  height: 180px;
+  float:left ;
+  margin: 5px;
+  cursor: pointer;
+  border: 5px solid #ffffff;
+  background-color: rgba(0,0,0,.4);
+  -webkit-transition: all .4s ease-in ;
+}
+
+ul#album-fotos li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000 ;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 335px;
+    padding: 5px;
+}
+
+ul#album-fotos li:hover {
+  -webkit-transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span {
+  opacity: 1;
+}
+
+ul#album-fotos li#pizza {
+  background: url('_imagens/oficial.jpeg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+   background-color: #ffffff
+}
+
+ul#album-fotos li#pizza:hover {
+  background-position: 0px 0px;
+  background-size:200px 200px;
+}
+
+ul#album-fotos li#burger {
+  background: url('_imagens/facapedido.jpeg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400x;
+  background-color: #ffffff;
+}
+ul#album-fotos li#burger:hover {
+  background-position: 0px 0px;
+  background-size:200px 200px;
+}
+
+ul#album-fotos li#combo {
+  background: url('_imagens/combo.jpeg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400x;
+  background-color: #ffffff;
+}
+ul#album-fotos li#combo:hover {
+  background-position: 0px 0px;
+  background-size:200px 200px;
+}
+
+ul#album-fotos li#bebida {
+  background: url('_imagens/bebidas.jpg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400x;
+  background-color: #ffffff;
+}
+ul#album-fotos li#bebida:hover {
+  background-position: 0px 0px;
+  background-size:200px 200px;
+}
+
+ul#album-fotos li#batata {
+  background: url('_imagens/batatafrita.jpg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400x;
+  background-color: #ffffff;
+}
+ul#album-fotos li#batata:hover {
+  background-position: 0px 0px;
+  background-size:200px 200px;
+}
+
+ul#album-fotos li#joao {
+  background: url('_imagens/chefe.jpg') no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400x;
+   background-color: #ffffff;
+}
+ul#album-fotos li#joao:hover {
+  background-position: 0px 0px;
+  background-size:200px 200px;
+}
+
+.container{
+  display: inline-flex;
+  
+}
+
+.face{
+  background-color: royalblue;
+  border-radius: 30px;
+  margin-right: 40px;
+}
+.face:hover{
+  background-color: rgb(3, 17, 59);
+  box-shadow: 7px 7px 7px royalblue;
+  
+}
+
+.insta{
+  background-color: salmon;
+  border-radius: 30px;
+  margin-right: 40px;
+}
+.insta:hover{
+  background-color: rgb(109, 18, 7);
+  box-shadow: 7px 7px 7px salmon;
+}
+
+.whatt{
+  background-color: green;
+  border-radius: 30px;
+  margin-right: 40px;
+}
+
+.whatt:hover{
+  background-color: rgb(2, 46, 2);
+  box-shadow: 7px 7px 7px green;
+}
+
+footer#rodape{clear: both; border-top: 3px double #606060; background-color:  rgb(253, 240, 51) ;}
+footer#rodape p {text-align: center; font-size: 1em; color:rgb(2, 2, 37);}
